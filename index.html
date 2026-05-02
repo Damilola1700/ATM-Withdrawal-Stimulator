@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATM Withdrawal Stimulator project</title>
-</head>
-<body>
-   
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="rounded-lg w-[400px] h-[400px] m-auto bg-[#E6F0FC] mt-[30px]">
+      <div class="p-10 pt-[30px] ">
+        <h3 class="mb-[10px] text-[20px] text-[#103A6C] flex justify-center ">Input Amount To Withdraw</h3>
+        <input type="number" id="WriteAmount" class="w-full p-2 rounded-lg h-[40px] border border-[#103A6C] mb-[50px]" />
+        
+        <button onclick="withdrawHere()" class="bg-[#103A6C] w-full p-2  text-white font-[10px] font-bold rounded-lg px-1 mb-[10px]">
+          Withdraw
+        </button>
+        <p id="messageDisplay" class="hidden text-[#103A6C] bg-[#68A4F1] w-[200px]  p-3 text-center rounded-md shadow-md " ></p>
+      </div>
+    </section>
 
     <script src="atm-withdrawal.js"></script>
-</body>
+  </body>
 </html>
