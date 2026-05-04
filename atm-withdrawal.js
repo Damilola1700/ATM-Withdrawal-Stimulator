@@ -10,14 +10,11 @@ function withdrawHere() {
     
   }
 
-  if (WithdrawAmount.value > balance){
-    output.innerHTML = "Insufficient Funds"
-    output.classList.remove("hidden");
-  } 
-
   if (WithdrawAmount.value <= balance){
     output.innerHTML = `Withdrawal Successful! Your available balance is ${balance - WithdrawAmount.value}`;
     output.classList.remove("hidden");
+  } else{
+    output.innerHTML = "Insufficient Funds"
   }
 
   if (WithdrawAmount.value < 1000 && balance >0 ){
